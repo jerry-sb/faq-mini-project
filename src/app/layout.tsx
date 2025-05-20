@@ -2,6 +2,8 @@ import "./globals.css";
 
 import localFont from "next/font/local";
 
+import Header from "@/components/layout/header";
+
 const kiaFont = localFont({
    src: [
       {
@@ -24,6 +26,9 @@ export default function RootLayout({
    return (
       <html lang="en">
          <body className={`${kiaFont.variable} font-kia`}>
+            <div>
+               <Header />
+            </div>
             <main>{children}</main>
          </body>
       </html>
