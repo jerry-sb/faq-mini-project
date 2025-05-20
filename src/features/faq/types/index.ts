@@ -22,3 +22,11 @@ export type CategoryMaps = {
    CONSULT: Record<ConsultCategoryID, string>;
    USAGE: Record<UsageCategoryID, string>;
 };
+
+export interface FilterFAQParams {
+   tab: FAQTabType;
+   categoryId?: string;
+   question?: string;
+   offset?: number;
+   limit?: number;
+}
