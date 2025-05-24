@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
 
-import HeaderButton from "@/components/layout/header/header-button";
-import HeaderLogo from "@/components/layout/header/header-logo";
-import HeaderNav from "@/components/layout/header/header-nav";
-import HeaderSticky from "@/components/layout/header/header-sticky";
+import HeaderButton from "@/features/common/components/layout/header/header-button";
+import HeaderLogo from "@/features/common/components/layout/header/header-logo";
+import HeaderNav from "@/features/common/components/layout/header/header-nav";
+import HeaderSticky from "@/features/common/components/layout/header/header-sticky";
 import { cn } from "@/features/faq/utils/tailwind-util";
 
 export default function Header({
