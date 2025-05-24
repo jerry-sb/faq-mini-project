@@ -30,3 +30,14 @@ export interface FilterFAQParams {
    offset?: number;
    limit?: number;
 }
+
+export interface CategoryResponse<T> {
+   categoryID: T;
+   name: string;
+}
+
+export type CategoryIDByTab<T extends FAQTabType> = T extends "CONSULT"
+   ? ConsultCategoryID
+   : T extends "USAGE"
+     ? UsageCategoryID
+     : never;
