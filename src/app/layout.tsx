@@ -2,7 +2,9 @@ import "./globals.css";
 
 import localFont from "next/font/local";
 
-import Header from "@/components/layout/header";
+import Footer from "@/features/common/components/layout/footer";
+import Header from "@/features/common/components/layout/header";
+import ScrollToTopButton from "@/ui/button/scroll-top-button";
 
 const kiaFont = localFont({
    src: [
@@ -26,10 +28,12 @@ export default function RootLayout({
    return (
       <html lang="en">
          <body className={`${kiaFont.variable} font-kia`}>
-            <div>
-               <Header />
-            </div>
-            <main>{children}</main>
+            <Header />
+            <main className="relative min-h-screen px-side pb-bottom">
+               {children}
+            </main>
+            <ScrollToTopButton />
+            <Footer />
          </body>
       </html>
    );
