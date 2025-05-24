@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 
 import Footer from "@/features/common/components/layout/footer";
 import Header from "@/features/common/components/layout/header";
+import QueryProvider from "@/lib/query-provider";
 import ScrollToTopButton from "@/ui/button/scroll-top-button";
 
 const kiaFont = localFont({
@@ -29,10 +30,14 @@ export default function RootLayout({
       <html lang="en">
          <body className={`${kiaFont.variable} font-kia`}>
             <Header />
-            <main className="relative min-h-screen px-side pb-bottom">
-               {children}
-            </main>
-            <ScrollToTopButton />
+            <QueryProvider>
+               <main className="relative min-h-screen px-side pb-bottom">
+                  {children}
+               </main>
+            </QueryProvider>
+            <div className={"relative"}>
+               <ScrollToTopButton />
+            </div>
             <Footer />
          </body>
       </html>
