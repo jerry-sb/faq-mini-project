@@ -1,4 +1,4 @@
-import { cn } from "@/features/faq/utils/tailwind-util";
+import { cn } from "@/features/common/utils/tailwind-util";
 
 interface HeaderButtonProps {
    isOpen: boolean;
