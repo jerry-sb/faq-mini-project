@@ -1,12 +1,12 @@
 import "server-only";
 
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 import { FAQTabType } from "@/features/faq/types";
 import { filterFAQ } from "@/features/faq/utils/filter-util";
 
-export const GET = async (req: Request) => {
-   const { searchParams } = new URL(req.url);
+export const GET = async (req: NextRequest) => {
+   const searchParams = req.nextUrl.searchParams;
 
    const tab = searchParams.get("tab") as FAQTabType;
    const categoryId = searchParams.get("faqCategoryID") || undefined;
