@@ -40,6 +40,7 @@ export default {
          },
          inset: {
             header: "var(--header-height)",
+            footer: "var(--footer-height)",
          },
          fontSize: {
             base: "var(--font-size)",

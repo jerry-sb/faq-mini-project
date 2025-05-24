@@ -5,6 +5,7 @@
 @layer base {
    :root {
       --max-width: 1660px;
+      --line-height-xs: 1.1;
       --line-height-sm: 1.4;
       --line-height-md: 1.6;
       --line-height-lg: 1.8;
@@ -24,6 +25,10 @@
       --gray-100: #e6e8e9;
       --gray-50: #f6f6f9;
       --gray-10: #f8f8f8;
+
+      --font-md: 14px;
+      --font-lg: 16px;
+      --line-height-footer: 24px;
    }
 
    @media (max-width: 743px) {
@@ -85,6 +90,10 @@
          --faq-list-a-padding-h: 0;
          --faq-list-a-size: 16px;
          --faq-list-q-padding: 16px 0;
+
+         --font-md: 12px;
+         --font-lg: 14px;
+         --line-height-footer: 22px;
       }
    }
 
@@ -147,6 +156,10 @@
          --faq-list-a-padding-h: 24px;
          --faq-list-a-size: 20px;
          --faq-list-q-padding: 24px 24px;
+
+         --font-md: 14px;
+         --font-lg: 16px;
+         --line-height-footer: 24px;
       }
    }
 
@@ -209,6 +222,10 @@
          --faq-list-a-padding-h: 20px;
          --faq-list-a-size: 18px;
          --faq-list-q-padding: 24px 32px;
+
+         --font-md: 14px;
+         --font-lg: 16px;
+         --line-height-footer: 24px;
       }
    }
 
@@ -271,10 +288,13 @@
          --faq-list-a-padding-h: 24px;
          --faq-list-a-size: 20px;
          --faq-list-q-padding: 32px 40px;
+
+         --font-md: 14px;
+         --font-lg: 16px;
+         --line-height-footer: 24px;
       }
    }
 }
-
 
 /* Init ************************************************************ */
 * {
@@ -286,15 +306,11 @@ html {
    /* background-color: var(--midnight-900); */
 }
 body {
-   height: 100%;
    min-width: 360px;
    margin: 0;
-   /* background-color: #fff; */
 }
 body.nav-opened,
-body.modal-opened {
-   overflow: hidden;
-}
+
 body,
 button,
 input,
