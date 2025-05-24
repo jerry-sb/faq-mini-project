@@ -1,8 +1,8 @@
+import { paginate } from "@/features/common/utils/common-util";
 import { CATEGORY_MAPS } from "@/features/faq/constants/map";
 import { CONSULT_FAQ_ALL } from "@/features/faq/mock/consult/faq.mock";
 import { USAGE_FAQ_ALL } from "@/features/faq/mock/usage/faq.mock";
 import { FAQTabType, FilterFAQParams } from "@/features/faq/types";
-import { paginate } from "@/features/faq/utils/common-util";
 
 export function applyFAQFilter(
    tab: FAQTabType,

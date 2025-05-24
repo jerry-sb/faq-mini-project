@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { paginate } from "@/features/faq/utils/common-util";
+import { paginate } from "@/features/common/utils/common-util";
 
 const mockItems = Array.from({ length: 25 }, (_, i) => ({ id: i + 1 }));
 
