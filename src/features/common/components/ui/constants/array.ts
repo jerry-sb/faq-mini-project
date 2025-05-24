@@ -49,3 +49,22 @@ export const footerAddressItems = [
    "고객센터: 1833-4964",
    "제휴문의: kiabiz@kia.com",
 ];
+
+export const headerNaviItems = [
+   {
+      title: "서비스 소개",
+      url: "https://wiblebiz.kia.com/Guide",
+   },
+   {
+      title: "자주 묻는 질문",
+      url: "https://wiblebiz.kia.com/FAQ",
+   },
+   {
+      title: "새소식",
+      url: "https://wiblebiz.kia.com/News",
+   },
+   {
+      title: "상담문의",
+      url: "https://wiblebiz.kia.com/News",
+   },
+];

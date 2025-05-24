@@ -1,27 +1,9 @@
 import { cn } from "@/features/common/utils/tailwind-util";
+import { headerNaviItems } from "@/ui/constants/array";
 
 interface HeaderNavProps {
    isOpen: boolean;
 }
-
-const menuList = [
-   {
-      title: "서비스 소개",
-      url: "https://wiblebiz.kia.com/Guide",
-   },
-   {
-      title: "자주 묻는 질문",
-      url: "https://wiblebiz.kia.com/FAQ",
-   },
-   {
-      title: "새소식",
-      url: "https://wiblebiz.kia.com/News",
-   },
-   {
-      title: "상담문의",
-      url: "https://wiblebiz.kia.com/News",
-   },
-];
 
 export default function HeaderNav({ isOpen }: HeaderNavProps) {
    return (
@@ -34,7 +16,7 @@ export default function HeaderNav({ isOpen }: HeaderNavProps) {
             "lg:mr-[-20px] lg:flex-1 lg:justify-end lg:px-0"
          )}>
          <ul className={cn("flex flex-col mt-[80px]", "lg:flex-row lg:mt-0")}>
-            {menuList.map((item, index) => (
+            {headerNaviItems.map((item, index) => (
                <li className="lg:mx-[16px]" key={`nav-${index}`}>
                   <a
                      href={item.url}
